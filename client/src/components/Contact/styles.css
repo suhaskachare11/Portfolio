@@ -1,0 +1,224 @@
+.cu-wrapper{
+    height: 85vh;
+    box-sizing: border-box;
+    margin: 10px 80px;
+    /* background: linear-gradient(90deg ,#216396 0%,#0e3959 30%,#51bdf0 30% ,#03a9f5 100%); */
+    /* background: linear-gradient(90deg ,rgb(250, 217, 223) 0%,pink 30%,rgb(250, 194, 203) 30% ,pink 100%); */
+    /* background-color: rgb(243, 201, 208); */
+    background-color: rgb(155, 205, 224);
+    border-radius: 20px;
+
+}
+.cu-wrapper .cu-container{
+    padding: 10px 100px;
+
+}
+.cu-container .cu-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.cu-container .cu-title h2{
+    /* color: #fff; */
+    color: black;
+    font-weight: 500;
+    font-family: 'Tapestry', cursive;
+}
+.cu-form{
+    grid-area: form;
+}
+.cu-info{
+    grid-area: info;
+}
+.cu-map{
+    grid-area: map;
+}
+.cu-contact{
+    padding: 20px 40px;
+    background: #fff;
+    /* background: rgb(250, 211, 218); */
+    /* background: rgb(255, 193, 205); */
+    /* background: rgb(253, 216, 223); */
+   
+    box-shadow: 0px 5px 35px rgba(0,0,0,0.15);
+}
+.cu-box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    gap: 20px;
+    margin-top: 20px;
+    max-height: 470px ;
+}
+.cu-contact h3{
+    /* color: #0e3959; */
+    /* color: #f54195; */
+    color: black;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Tapestry', cursive;
+}
+.cu-formBox{
+    position: relative;
+    width: 100%;
+}
+.cu-formBox .cu-row50{
+    display: flex;
+    gap: 20px;
+}
+.cu-inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 50%;
+}
+.cu-formBox .cu-row100 .cu-inputBox{
+    width: 100%;
+}
+.cu-inputBox span{
+    /* color: rgb(253, 79, 48); */
+    /* color: #f54195; */
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.cu-inputBox input{
+    padding: 10px;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.cu-inputBox textarea{
+    padding: 10px;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid #333;
+    height: 110px;
+    max-height: 120px;
+    resize: none; 
+    margin-bottom: 10px;
+}
+.cu-row100 .cu-inputBox input{
+    background-color: #ff578b;
+    color: #fff;
+    font-size: 1.2em;
+    max-width: 120px;
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    font-weight: 500;
+}
+.cu-row100 .cu-inputBox input:hover{
+    color: #333;
+}
+.cu-inputBox ::placeholder{
+    color: #999;
+    /* color: #ecc3d7; */ 
+}
+
+.cu-info h3{
+    /* color: #fff; */
+    color: black;
+}
+.cu-infoBox{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.cu-info .cu-infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.cu-info .cu-infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(255, 86, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.cu-info .cu-infoBox div p{
+    /* color: #fff; */
+    color: black;
+    font-size: 1.1em;
+}
+.cu-info .cu-infoBox div a{
+    /* color: #fff; */
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.cu-social{
+    margin-top: 15px;
+    display: flex;
+    padding-left: 10px;
+}
+.cu-social li{
+     list-style: none;
+     margin-right: 20px;
+     width: 45px;
+     height: 45px;
+     border-radius: 50%;
+     /* background-color: red; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+.cu-facebook{
+    background-color:rgb(0, 183, 255);
+}
+.cu-instagram{
+    background-color: rgb(243, 78, 49)
+}
+.cu-linkedin{
+    background-color: rgb(67, 67, 241);;
+}
+.cu-github{
+    background-color: #333;
+}
+.cu-social li a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cu-social li:hover {
+    /* color: rgb(26, 22, 22); */
+    transition: 0.5s ease-out;
+    transform: scale(1.2);
+
+}
+.cu-map{
+    padding: 0px;
+}
+.cu-map iframe{
+    width: 100%;
+    height: 100%;
+}
+.cu-row100 .cu-doneMessage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+.cu-row100 .cu-doneMessage div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 30px;
+    background-color: pink;
+}

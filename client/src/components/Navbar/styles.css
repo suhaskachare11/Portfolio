@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500;1,600&family=Roboto:wght@300;400;500;700;900&family=Urbanist:wght@500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Tapestry', cursive; */
+   
+}
+body{
+    background-color: #d3f2f7;
+}
+.wrapper{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d3f2f7;
+}
+.menuPanel{
+    margin-left: 40px;
+}
+.menuItem{
+    margin:0px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    /* transition: 1s ease-out; */
+    font-family: 'Tapestry', cursive;
+  
+}
+.menuItem:hover{
+    /* border-bottom: 2px solid #08deff; */
+    /* font-size: 28px; */
+    /* transform: scale(1.07); */
+    color: cadetblue;
+}
+.resumeButton{
+    padding: 60px;
+}
+.viewResume{
+    padding: 3px 15px;
+    font-size: 18px;
+    border: 3px solid #08deff;
+    background-color: #d3f2f7;
+    cursor: pointer;
+    font-family: 'Tapestry', cursive;
+}
+
+
+
+/* #d3f2f7 */

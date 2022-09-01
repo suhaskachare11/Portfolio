@@ -1,0 +1,221 @@
+.tl-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Oleo Script Swash Caps', cursive; 
+    font-size: 25px;
+}
+
+
+.tl-wrapper{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px 80px;
+    margin-bottom: 50px;
+    scroll-behavior: inherit;
+}
+.tl-centerLine{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tl-wrapper .tl-card{
+    position: relative;
+    height: 250px;
+    background-color:white;
+    display: flex;
+    width: 400px;
+    margin: 30px 30px;
+    border-radius: 10px;
+}
+.tl-wrapper .row-1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.tl-wrapper .row-2{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end; 
+    box-sizing: border-box;
+    padding-right: 50px;
+}
+.tl-wrapper .tl-card .tl-imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(173, 218, 235);
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.tl-wrapper .tl-card .tl-imgBx::before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(255,255,255,0.8);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tl-wrapper .tl-card:hover .tl-imgBx::before{
+    font-size: 3em;
+    color: rgb(0, 0, 0 , 0.8);
+}
+.tl-wrapper .tl-card:hover .tl-imgBx1{
+     width: 160px;
+     height: 160px;
+     left: -75px;
+     top: 50px; 
+     transition: 0.5s ease-in-out;
+     background-color: palegreen;
+}
+.tl-wrapper .tl-card:hover .tl-imgBx2{
+     width: 150px;
+     height: 150px;
+     left: 325px;
+     top: 50px; 
+     transition: 0.5s ease-in-out;
+     background-color: plum;
+}
+
+.tl-wrapper .tl-card::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: rgb(173, 218, 235);
+    /* background-color: #fff; */
+    top: 35px;
+    z-index: -1;
+    transform: rotate(45deg);
+    transition: 1s ease-out;    
+}
+.tl-wrapper .tl-card:hover::before{
+    background-color: #fff;
+}
+.tl-wrapper .tl-card1::before{
+    right: -7px;
+}
+.tl-wrapper .tl-card2::before{
+    left: -7px;
+}
+.tl-wrapper .tl-card .tl-icon ,  .tl-centerLine .tl-scroll{
+    position: absolute;
+    background-color: rgb(170, 220, 240);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    top: 20px;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08) , 0 3px 0 4px rgba(0,0,0,0.05) ;
+    cursor: pointer;
+}
+.tl-centerLine .tl-scroll{
+    left: 50%;
+    transform: translateX(-50%) translateY(1220px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tl-wrapper .tl-card1 .tl-icon{
+    top: 13px;
+    right:-105px;
+}
+.tl-wrapper .tl-card2 .tl-icon{
+    top: 13px;
+    left:-105px;
+}
+.tl-wrapper .tl-card .tl-content1{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     box-sizing: border-box;
+     padding-left: 90px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.tl-content1 h3{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 28px; 
+    text-align: center;
+    margin-bottom: 10px;
+    color: tomato;
+} 
+.tl-content1 p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: gray;
+}
+.tl-content1 .tl-institutes{
+    font-size: 20px;
+}
+.tl-content1 .tl-marks{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 28px; 
+    color: teal;
+    margin-bottom: 0px;
+    line-height: 35px;
+}
+
+.tl-wrapper .tl-card .tl-content2{
+     position: absolute;
+     width: 75%;
+     height: 80%;
+     padding:20px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+.tl-content2 h3{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 28px; 
+    text-align: center;
+    margin-bottom: 10px;
+    color: tomato;
+} 
+.tl-content2 p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: gray;
+}
+.tl-content2 .tl-institutes{
+    font-size: 20px;
+}
+.tl-content2 .tl-marks{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 28px; 
+    color: teal;
+    margin-bottom: 0px;
+}
